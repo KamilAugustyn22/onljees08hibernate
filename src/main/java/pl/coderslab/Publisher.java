@@ -8,12 +8,10 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@Table(name = "books")
-public class Book {
+@Table(name = "publishers")
+public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private int rating;
-    private String description;
+    private String name;
 }
